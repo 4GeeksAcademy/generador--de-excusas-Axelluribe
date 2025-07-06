@@ -19,6 +19,6 @@ window.onload = function() {
   let excusa = sujeto[numeroRandom] + " " + verb[numeroRandom] + " " + predicado[numeroRandom];
   console.log("frase:", excusa);
 
-  // Mostrar la excusa en la página
+
   document.getElementById("excusa").innerHTML = excusa;
 }
