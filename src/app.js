@@ -7,18 +7,19 @@ import "./assets/img/4geeks.ico";
 window.onload = function () {
 
 let sujeto = ["mi perro", "mi abuela", "el cartero", "mi hijo"];
-  let verb = ["se comio ", "perdio", "estrello", "rompio"];
-  let predicado = ["mi tarea", "las llaves", "el carro", "el telefono"];
+let verb = ["se comió", "perdió", "estrelló", "rompió"];
+let predicado = ["mi tarea", "las llaves", "el carro", "el teléfono"];
 
-  let generarNumeroRandom = function (array) {
-    return Math.floor(Math.random() * array.length);
-  };
+let generarNumeroRandom = function (array) {
+  return Math.floor(Math.random() * array.length);
+};
 
-  let numeroRandom = generarNumeroRandom(sujeto);
-  console.log("Número random:", numeroRandom);
+let randomSujeto = generarNumeroRandom(sujeto);
+let randomVerbo = generarNumeroRandom(verb);
+let randomPredicado = generarNumeroRandom(predicado);
 
-  let excusa = `${sujeto[numeroRandom]} ${verb[numeroRandom]} ${predicado[numeroRandom]}`
+let excusa = `${sujeto[randomSujeto]} ${verb[randomVerbo]} ${predicado[randomPredicado]}`;
 
-  console.log("Frase:", excusa);
-  document.getElementById("excusa").innerHTML = excusa;
+console.log("Frase:", excusa);
+document.getElementById("excusa").innerHTML = excusa;
 };
